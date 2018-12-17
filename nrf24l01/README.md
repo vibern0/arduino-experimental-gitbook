@@ -8,6 +8,7 @@ The module have 8 pins, form which one will not be used when connected to arduin
 So, first things first. There's a VCC, GND, MOSI and MISO pins. Connect to the respetive pins in the arduino, does not matter the module! The VCC should receive 3.3v and there's a current it's variable, see [here](https://www.itead.cc/wiki/NRF24L01_Module)!
 Only two are missing, the port CE and CSN. Well, use any two free ports.
 In arduino micro I used D9 and D10 respectively and in NodeMCU I used D2 and D4 respectively!
+Depending on the arduino, you may have to use D like D9 or just the 9. In NodeMCU I used, in arduino micro, not.
 The NRF package from tmrh20 is initialized using *RF24 (uint8_t _cepin, uint8_t _cspin)*
 
 #### The example running
